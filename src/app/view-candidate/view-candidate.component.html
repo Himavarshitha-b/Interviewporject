@@ -1,0 +1,22 @@
+<div class="box">
+  <h1> Candidate View</h1>
+  
+    <form [formGroup]="candidateViewForm" (ngSubmit)="submit()">
+
+      
+      <!--userId-->
+      
+
+        <input formControlName="userId" id="userId" type="number" class="form-control" required>
+        
+        <label>UserId:</label>
+        <div *ngIf="f.userId.touched && f.userId.invalid" class="alert alert-danger">
+          <div *ngIf="f.userId.errors.required" style="color: red;">userId is required.</div>
+        </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="!candidateViewForm.valid">Submit</button>
+      <button class="btn btn-primary" type="reset" >Reset</button>
+          
+  
+    </form>
+  </div>

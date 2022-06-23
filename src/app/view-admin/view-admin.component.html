@@ -1,0 +1,37 @@
+<div class="box">
+  <h1>view Admin</h1>
+  
+  <form [formGroup]="viewAdminForm">
+  <label>SEARCH Admin:</label>
+  <input formControlName="userId" id="userId" type="number" (ngModelChange)="submit()" class="form-control">
+  </form>
+  </div>
+  <br>
+  <div class="col-grid gap-2 col-6 ">
+  <table class="table table-hover">
+  <thead>
+  <tr>
+  <th>user Id</th>
+  <th>Name</th>
+  <th>contact number</th>
+  <th>email</th>
+  <th>Address</th>
+  <th>userName</th>
+  <th>role</th>
+  <th>Designation</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr >
+  <td>{{viewAdmin.userId}}</td>
+  <td>{{viewAdmin.name}}</td>
+  <td>{{viewAdmin.contactNo}}</td>
+  <td>{{viewAdmin.email}}</td>
+  <td>{{viewAdmin.address}}</td>
+  <td>{{viewAdmin.userName}}</td>
+  <td>{{viewAdmin.role}}</td>
+  <td>{{viewAdmin.designation}}</td>
+  </tr>
+  </tbody>
+</table>
+  </div>

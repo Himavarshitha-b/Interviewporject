@@ -1,0 +1,62 @@
+<!-- 
+<div style="text-align: center;">
+
+ <div class="container" class="box">
+    <title>login</title>
+    <div class="row">
+  
+      <div class="col-md-6">
+
+  
+<img src="userlogin.png" height="70" width="70">  
+  <div class="card">
+    <input type="text" placeholder="Username" id="userName" ><br>
+    <input type="password" placeholder="Password" id="password" ><br>
+    <a href="#">Forgot password?</a><br>
+    <input type="submit" value="submit" id="button" (click)="checkLogin()"> 
+      <button (click)=checkLogin() class="btn btn-success">Login</button><br/>
+
+     <a style="color: pink (185, 225, 65);margin-top: 10px;" routerLink="/registeremployee"><br><br>Click here to Register!</a> 
+  
+  </div></div></div></div></div> -->
+ 
+
+
+  <div style="text-align: center;">
+
+    <div class="container">
+  
+      <div class="row">
+  
+        <div class="col-md-6">
+  
+          <div class="card">
+            <!-- <img src= "/assets/images/loginlogo.png" height="80" width="90">   -->
+            <h3>Login here!</h3>
+  
+           
+          <i class="glaphicon glaphicon-user"></i>
+           <label for="userName"><i class="fa fa-user" aria-hidden="true"></i><b>User Name :</b></label>
+  
+             <input type="text" name="userName" [(ngModel)]="userName"placeholder="Enter your user name here"><br/>
+  
+           
+  
+             <label for="password"><i class="fa fa-unlock" aria-hidden="true"></i><b>Password :</b></label>
+  
+            <input type="password" name="password" [(ngModel)]="password" placeholder="Enter your password here"><br/>
+  
+   
+   <input type="submit" value="Login" id="button" (click)="checkLogin()"> 
+            
+  
+            <!-- <a style="color: rgb(255, 34, 122) (14, 24, 0);margin-top: 10px;" routerLink="/registerCustomer">Didn't Register yet? Register here!</a> -->
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  

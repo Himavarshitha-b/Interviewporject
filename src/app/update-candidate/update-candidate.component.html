@@ -1,0 +1,165 @@
+<pre>
+  <h1> Update Registration Form</h1>
+</pre>
+<div class="box">
+  <pre></pre>
+  
+  
+    <form [formGroup]="candidateUpdateForm" (ngSubmit)="submit()">
+
+      
+      <!--userId-->
+      <div class="form-group inputBox">
+        <input formControlName="userId" id="userId" type="number" class="form-control" required>
+        <label>UserId:</label>
+        <div *ngIf="f.userId.touched && f.userId.invalid" class="alert alert-danger">
+          <div *ngIf="f.userId.errors.required" style="color: red;">userId is required.</div>
+        </div>
+      </div>
+
+      <!--name-->
+      <div class="form-group inputBox">
+        <input formControlName="name" id="name" type="text" class="form-control" required>
+        <label>Name:</label>
+        <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+          <div *ngIf="f.name.errors.required" style="color: red;">name is required.</div>
+        </div>
+      </div>
+
+      <!--contact no-->
+      <div class="form-group inputBox">
+        <input formControlName="contactNo" id="contactNo" type="number" class="form-control" required>
+        <label>ContactNo:</label>
+        <div *ngIf="f.contactNo.touched && f.contactNo.invalid" class="alert alert-danger">
+          <div *ngIf="f.contactNo.errors.required" style="color: red;">ContactNo is required.</div>
+        </div>
+      </div>
+      
+      <!--address-->
+         <div class="form-group inputBox">
+        <input formControlName="address" id="address" type="text" class="form-control" required>
+        <label>Address:</label>
+        <div *ngIf="f.address.touched && f.address.invalid" class="alert alert-danger">
+          <div *ngIf="f.address.errors.required" style="color: red;">Address is required.</div>
+          </div>
+        </div>
+        
+        <!--user name-->
+        <div class="form-group inputBox">
+            <input formControlName="userName" id="userName" type="text" class="form-control" required>
+            <label>User Name:</label>
+            <div *ngIf="f.userName.touched && f.userName.invalid" class="alert alert-danger">
+              <div *ngIf="f.userName.errors.required" style="color: red;">UserName is required.</div>
+        </div>
+         </div>
+            
+            
+           <!--password-->
+            <div class="form-group inputBox">
+                <input formControlName="password" id="password" type="password" class="form-control" required>
+                <label>Passwors:</label>
+                <div *ngIf="f.password.touched && f.password.invalid" class="alert alert-danger">
+                  <div *ngIf="f.password.errors.required" style="color: red;">Password is required.</div>
+                </div>
+                </div>
+                
+            <!--email-->
+                <div class="form-group inputBox">
+                    <input formControlName="email" id="email" type="email" class="form-control" required>
+                    <label>Email:</label>
+                    <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
+                      <div *ngIf="f.email.errors.required" style="color: red;"> Email is required.</div>
+                      </div>
+                    </div>
+              
+             <!--role-->
+             <div class="form-group inputBox">
+              <input formControlName="role" id="role" type="text" class="form-control" required>
+              <label>Role:</label>
+              <div *ngIf="f.role.touched && f.role.invalid" class="alert alert-danger">
+                <div *ngIf="f.role.errors.required" style="color: red;"> Role is required.</div>
+                </div>
+              </div>
+
+            <!--primary Skils-->
+            <div class="form-group inputBox">
+              <input formControlName="primarySkils" id="primarySkils" type="text" class="form-control" required>
+              <label>Primary skils:</label>
+              <div *ngIf="f.primarySkils.touched && f.primarySkils.invalid" class="alert alert-danger">
+                <div *ngIf="f.primarySkils.errors.required" style="color: red;"> Primary skils is required.</div>
+                </div>
+              </div>
+
+              <!--secondary Skils-->
+            <div class="form-group inputBox">
+              <input formControlName="secondarySkils" id="secondarySkils" type="text" class="form-control" required>
+              <label>econdary skils:</label>
+              <div *ngIf="f.secondarySkils.touched && f.secondarySkils.invalid" class="alert alert-danger">
+                <div *ngIf="f.secondarySkils.errors.required" style="color: red;"> secondary skils is required.</div>
+                </div>
+              </div>
+
+              <!--experience-->
+            <div class="form-group inputBox">
+              <input formControlName="experience" id="experience" type="number" class="form-control" required >
+              <label>Experience:</label>
+              <div *ngIf="f.experience.touched && f.experience.invalid" class="alert alert-danger">
+                <div *ngIf="f.experience.errors.required" style="color: red;"> Experience is required.</div>
+                </div>
+              </div>
+
+              <!--qualification-->
+            <div class="form-group inputBox">
+              <input formControlName="qualification" id="qualification" type="text" class="form-control" required >
+              <label>Qualification:</label>
+              <div *ngIf="f.qualification.touched && f.qualification.invalid" class="alert alert-danger">
+                <div *ngIf="f.email.errors.required" style="color: red;"> Qualification is required.</div>
+                </div>
+              </div>
+
+             <!--designation-->
+            <div class="form-group inputBox">
+              <input formControlName="designation" id="designation" type="text" class="form-control" required>
+              <label>Designation:</label>
+              <div *ngIf="f.designation.touched && f.designation.invalid" class="alert alert-danger">
+                <div *ngIf="f.designation.errors.required" style="color: red;"> Designation is required.</div>
+                </div>
+              </div>
+
+               <!--notice period-->
+            <div class="form-group inputBox">
+              <input formControlName="noticePeriod" id="noticePeriod" type="number" class="form-control" required>
+              <label>Notice period:</label>
+              <div *ngIf="f.noticePeriod.touched && f.noticePeriod.invalid" class="alert alert-danger">
+                <div *ngIf="f.noticePeriod.errors.required" style="color: red;"> Notice Period is required.</div>
+                </div>
+              </div>
+
+               <!--location-->
+            <div class="form-group inputBox">
+              <input formControlName="location" id="location" type="string" class="form-control" required>
+              <label>Location:</label>
+              <div *ngIf="f.location.touched && f.location.invalid" class="alert alert-danger">
+                <div *ngIf="f.location.errors.required" style="color: red;"> Location is required.</div>
+                </div>
+              </div>
+
+              <!--status-->
+              <div class="form-group inputBox">
+              <input formControlName="status" id="status" type="string" class="form-control" required>
+              <label>Status:</label>
+              <div *ngIf="f.status.touched && f.status.invalid" class="alert alert-danger">
+                <div *ngIf="f.status.errors.required" style="color: red;"> Status is required.</div>
+                </div>
+              </div>
+             
+             
+          <button class="btn btn-primary" type="submit" [disabled]="!candidateUpdateForm.valid">Submit</button>
+          <button class="btn btn-primary" type="reset" >Reset</button>
+        
+
+          
+  
+    </form>
+  </div>
+

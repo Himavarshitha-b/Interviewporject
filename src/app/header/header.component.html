@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+
+    <ul class="navbar-nav" >
+      
+     <!--<li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Employees</a></li>-->
+     <!--<li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addemployee" class="nav-link">Get Message</a></li>---> 
+
+       <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+     
+      <!-- <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/registercandidate" class="nav-link">Register-Canditate</a></li>
+
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/updatecandidate" class="nav-link">Update-Candidate</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/viewcandidate" class="nav-link">View-Candidate</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/deletecandidate" class="nav-link">Delete-Candidate</a></li> -->
+      
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li> -->
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/registeradmin" class="nav-link">registeradmin</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/updateAdmin" class="nav-link">updateAdmin</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/deleteadmin" class="nav-link">deleteadmin</a></li> -->
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/viewAdmin" class="nav-link">ViewAdmin</a></li>
+       <!-- <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/viewAll" class="nav-link">ViewAll</a></li>  -->
+    </ul>
+
+  </nav>
+
+</header>

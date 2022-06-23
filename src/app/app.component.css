@@ -1,0 +1,10 @@
+.my-background{
+    background-image: url("pics\mainPage.webp");
+    background-size: cover;
+}
+
+.spaceDiv{
+
+    height: 20px;
+    width: 100%;
+}

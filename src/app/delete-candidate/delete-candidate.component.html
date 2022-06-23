@@ -1,0 +1,23 @@
+<div class="box">
+  <h1> Delete</h1>
+  
+    <form [formGroup]="candidateDeleteForm" (ngSubmit)="submit()">
+
+      
+      <!--userId-->
+      <div class="form-group inputBox">
+
+        <input formControlName="userId" id="userId" type="number" class="form-control" required>
+        
+        <label>UserId:</label>
+        <div *ngIf="f.userId.touched && f.userId.invalid" class="alert alert-danger">
+          <div *ngIf="f.userId.errors.required" style="color: red;">userId is required.</div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="!candidateDeleteForm.valid">Delete</button>
+      <button class="btn btn-primary" type="reset" >Reset</button>
+          
+  
+    </form>
+  </div>

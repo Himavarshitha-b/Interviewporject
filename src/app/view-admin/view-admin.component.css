@@ -1,0 +1,21 @@
+input{
+  width: 100px;
+  margin-left: 50px;
+} 
+label{
+  margin-left: 50px;
+
+
+}
+pre{
+  background-color: rgba(38, 164, 238, 0.4);
+  
+}
+
+.box{
+  
+  background-color: rgba(182, 227, 244, 0.4);
+  
+ 
+ 
+}
